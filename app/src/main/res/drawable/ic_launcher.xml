@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Background circle -->
+    <path
+        android:fillColor="#FF69B4"
+        android:pathData="M54,54m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0" />
+    
+    <!-- Bear body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,70a16,16 0,1 0,0 -32a16,16 0,1 0,0 32z" />
+    
+    <!-- Left ear -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,38a8,8 0,1 0,0 -16a8,8 0,1 0,0 16z" />
+    
+    <!-- Right ear -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M66,38a8,8 0,1 0,0 -16a8,8 0,1 0,0 16z" />
+    
+    <!-- Left eye -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M48,52a2,2 0,1 0,0 -4a2,2 0,1 0,0 4z" />
+    
+    <!-- Right eye -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M60,52a2,2 0,1 0,0 -4a2,2 0,1 0,0 4z" />
+    
+    <!-- Nose -->
+    <path
+        android:fillColor="#FF1493"
+        android:pathData="M54,58a3,2 0,1 0,0 -4a3,2 0,1 0,0 4z" />
+    
+    <!-- Headphones -->
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:pathData="M36,54 Q36,42 42,38" />
+    <path
+        android:strokeColor="#000000"
+        android:strokeWidth="2"
+        android:pathData="M72,54 Q72,42 66,38" />
+    
+    <!-- K-POP text -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M40,76 L44,76 L44,80 L40,80 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M48,76 L52,76 L52,80 L48,80 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M56,76 L60,76 L60,80 L56,80 Z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M64,76 L68,76 L68,80 L64,80 Z" />
+</vector>
