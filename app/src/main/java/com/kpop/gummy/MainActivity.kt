@@ -124,7 +124,11 @@ fun GummyRadioApp() {
         spring(dampingRatio = Spring.DampingRatioHighBouncy, stiffness = Spring.StiffnessLow), label = "tap")
     LaunchedEffect(tapFlash) { if (tapFlash > 0f) { delay(250); tapFlash = 0f } }
 
-    val statusText = when { error -> "Связь потеряна…" buffering -> "Буферизация…" else -> "$stationName • K-POP" }
+    val statusText = when {
+        error -> "Связь потеряна…"
+        buffering -> "Буферизация…"
+        else -> "$stationName • K-POP"
+    }
 
     Box(Modifier.fillMaxSize().background(Brush.verticalGradient(listOf(BgTop, BgMid, BgBot)))) {
         Column(Modifier.fillMaxSize()) {
