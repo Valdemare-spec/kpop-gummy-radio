@@ -16,32 +16,31 @@
         android:maxSdkVersion="32" />
 
     <application
-        android:name=".GummyBearApp"
-        android:allowBackup="false"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.KPopGummyBearRadio">
-        
-        <activity
-            android:name=".presentation.MainActivity"
-            android:exported="true"
+            android:allowBackup="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
             android:theme="@style/Theme.KPopGummyBearRadio">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         
-        <service
-            android:name=".domain.service.PlaybackService"
-            android:exported="false"
-            android:foregroundServiceType="mediaPlayback">
-            <intent-filter>
-                <action android:name="androidx.media3.session.MediaSessionService" />
-            </intent-filter>
-        </service>
+            <activity
+                android:name=".MainActivity"
+                android:exported="true"
+                android:theme="@style/Theme.KPopGummyBearRadio">
+                <intent-filter>
+                    <action android:name="android.intent.action.MAIN" />
+                    <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            </activity>
+        
+            <service
+                android:name=".RadioService"
+                android:exported="false"
+                android:foregroundServiceType="mediaPlayback">
+                <intent-filter>
+                    <action android:name="androidx.media3.session.MediaSessionService" />
+                </intent-filter>
+            </service>
         
     </application>
 
